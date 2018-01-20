@@ -25,3 +25,4 @@ Route::get('/home', function() {
 });
 Route::resource('/setup_app', 'menuController');
 Route::resource('/group_role', 'GrouproleController');
+Route::resource('/addAccess', 'AccessController');
