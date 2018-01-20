@@ -53,7 +53,9 @@
                       <td>{{ date('d-m-Y H:i:s', strtotime($gr->created_at)) }}</td>
                       <td>{{ date('d-m-Y H:i:s', strtotime($gr->updated_at)) }}</td>
                       <td>
-                        
+                        <a href="{{ route('addAccess.show', $gr->id) }}" class="btn btn-primary btn-xs" title="Add Access">
+                          <i class="fa fa-universal-access"></i>
+                        </a>
                       </td>
                     </tr>
                   @endforeach
